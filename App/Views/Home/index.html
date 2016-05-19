@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{%block title%} Home {% endblock %}
+
+{% block body %}
+	<p>Hello from slimvc, {{ name }}</p>
+
+	<ul>
+		{% for color in colors %}
+			<li>{{ color }}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
+    
